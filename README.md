@@ -12,7 +12,7 @@ yarn install
 npm install
 
 - Add a .env file to the root
-- Add NUXT_API_KEY=your_omnidb_apiy_key
+- Add NUXT_API_KEY=your_omnidb_apikey
 
 ## Development Server
 
