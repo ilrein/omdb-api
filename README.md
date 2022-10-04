@@ -1,4 +1,6 @@
-# Nuxt 3 Minimal Starter
+# Search App
+
+![Screenshot](./assets/screenshot.png)
 
 ## Setup
 
