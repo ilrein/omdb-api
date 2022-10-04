@@ -30,24 +30,17 @@
 </template>
 
 <script setup>
-// {
-// 	"0": {
-// 		"Title": "Inception",
-// 		"Year": "2010",
-// 		"imdbID": "tt1375666",
-// 		"Type": "movie",
-// 		"Poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg"
-// 	}
-// }
 const search = ref('inception')
 const movies = ref([])
+
+const config = useRuntimeConfig()
 
 onMounted(async () => {
   await getMovies(search.value)
 });
 
 const getMovies = async (text) => {
-  const path = `http://www.omdbapi.com/?apikey=5b79bc3a&type=movie&s=${text}`;
+  const path = `http://www.omdbapi.com/?apikey=${config.public.apiKey}&type=movie&s=${text}`;
   try {
     const result = await $fetch(path);
     movies.value = result.Search;

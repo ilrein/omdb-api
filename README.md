@@ -1,7 +1,5 @@
 # Nuxt 3 Minimal Starter
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
-
 ## Setup
 
 Make sure to install the dependencies:
@@ -13,9 +11,8 @@ yarn install
 # npm
 npm install
 
-# pnpm
-pnpm install --shamefully-hoist
-```
+- Add a .env file to the root
+- Add NUXT_API_KEY=your_omnidb_apiy_key
 
 ## Development Server
 
